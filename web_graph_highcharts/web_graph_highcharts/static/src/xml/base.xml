@@ -1,0 +1,61 @@
+<template>
+	<div t-name="GraphViewHighcharts" t-att-id="element_id+'-chart-'+chart_id"
+			style="height:300px;position:relative;"/>
+
+	<t t-extend="SearchView">
+		<t t-jquery="div.oe_search-view-buttons" t-operation="replace">
+			<div class="oe_search-view-buttons">
+				<button class="oe_button" t-if="view.options.searchable">Search</button>
+				<button class="oe_button" type="reset" t-if="view.options.clearable">Clear</button>
+				<select class="oe_search-view-filters-management" t-if="view.options.filterable">
+				</select>
+			</div>
+		</t>
+	</t>
+
+	<t t-name="DashBoard">
+		<div class="oe-dashboard-links">
+			<button type="button" class="button oe-dashboard-link-reset" title="Reset Layout.." t-if="!node.attrs.resetable or node.attrs.resetable !== 'false'" t-att-style="view.fields_view.custom_view_id ? null : 'display: none'">
+				<img src="/web_dashboard/static/src/img/layout_2-1.png" width="16" height="16"/>
+				<span> Reset </span>
+			</button>
+			<button type="button" class="button oe-dashboard-link-change_layout" title="Change Layout.." t-if="!node.attrs.changeable or node.attrs.changeable !== 'false'">
+				<img src="/web_dashboard/static/src/img/layout_1-1-1.png" width="16" height="16"/>
+				<span> Change Layout </span>
+			</button>
+		</div>
+		<table t-att-data-layout="node.attrs.style" t-attf-class="oe-dashboard oe-dashboard-layout_#{node.attrs.style}" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td t-foreach="node.children" t-as="column" t-if="column.tag == 'column'"
+				 t-att-id="view.element_id + '_column_' + column_index" t-attf-class="oe-dashboard-column index_#{column_index}">
+
+				<t t-foreach="column.children" t-as="action" t-if="action.tag == 'action'" t-call="DashBoard.action"/>
+			</td>
+		</tr>
+		</table>
+	</t>
+	<t t-name="DashBoard.action">
+		<div t-att-data-id="action.attrs.name" class="oe-dashboard-action" t-if="!action.attrs.dragable or action.attrs.dragable !== 'false'">
+			<h2 t-attf-class="oe-dashboard-action-header #{action.attrs.string ? '' : 'oe-dashboard-action-header-empty'}">
+				<t t-esc="action.attrs.string"/>
+				<t t-if="!action.attrs.string">&amp;nbsp;</t>
+				<button t-if="action.attrs.creatable and action.attrs.creatable !== 'false'" class="oe_button oe_dashboard_button_create">Create</button>
+				<span class='ui-icon ui-icon-closethick' t-if="!action.attrs.closable or action.attrs.closable !== 'false'"></span>
+				<span class='ui-icon ui-icon-minusthick oe-dashboard-fold' t-if="(!action.attrs.expandable or action.attrs.expandable !== 'false') and !action.attrs.fold"></span>
+				<span class='ui-icon ui-icon-plusthick oe-dashboard-fold' t-if="(!action.attrs.expandable or action.attrs.expandable !== 'false') and action.attrs.fold"></span>
+			</h2>
+			<div t-attf-id="#{view.element_id}_action_#{column_index}_#{action_index}" class="oe-dashboard-action-content" t-att-style="action.attrs.fold ? 'display: none' : null"></div>
+		</div>
+		<div t-att-data-id="action.attrs.name" class="oe-dashboard-action" t-if="action.attrs.dragable and action.attrs.dragable == 'false'">
+			<h2 t-attf-class="oe-dashboard-action-header2 #{action.attrs.string ? '' : 'oe-dashboard-action-header2-empty'}">
+				<t t-esc="action.attrs.string"/>
+				<t t-if="!action.attrs.string">&amp;nbsp;</t>
+				<button t-if="action.attrs.creatable and action.attrs.creatable !== 'false'" class="oe_button oe_dashboard_button_create">Create</button>
+				<span class='ui-icon ui-icon-closethick' t-if="!action.attrs.closable or action.attrs.closable !== 'false'"></span>
+				<span class='ui-icon ui-icon-minusthick oe-dashboard-fold' t-if="(!action.attrs.expandable or action.attrs.expandable !== 'false') and !action.attrs.fold"></span>
+				<span class='ui-icon ui-icon-plusthick oe-dashboard-fold' t-if="(!action.attrs.expandable or action.attrs.expandable !== 'false') and action.attrs.fold"></span>
+			</h2>
+			<div t-attf-id="#{view.element_id}_action_#{column_index}_#{action_index}" class="oe-dashboard-action-content" t-att-style="action.attrs.fold ? 'display: none' : null"></div>
+		</div>
+	</t>
+</template>
