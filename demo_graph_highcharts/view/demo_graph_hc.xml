@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<menuitem name="Highcharts" id="menu_hc_root"/>
+		<menuitem name="Line charts" id="menu_hc_line_charts_root" parent="menu_hc_root" sequence="1"/>
+		<menuitem name="Area charts" id="menu_hc_area charts_root" parent="menu_hc_root" sequence="2"/>
+		<menuitem name="Column and bar charts" id="menu_hc_column_bar_charts_root" parent="menu_hc_root" sequence="3"/>
+		<menuitem name="Pie charts" id="menu_hc_pie_charts_root" parent="menu_hc_root" sequence="3"/>
+		<menuitem name="Scatter and bubble charts" id="menu_hc_scatter_and_bubble_charts_root" parent="menu_hc_root" sequence="3"/>
+		<menuitem name="Dynamic charts" id="menu_hc_dynamic_charts_root" parent="menu_hc_root" sequence="4"/>
+		<menuitem name="Combinations" id="menu_hc_combinations_charts_root" parent="menu_hc_root" sequence="5"/>
+		<menuitem name="3D charts" id="menu_hc_3d_charts_root" parent="menu_hc_root" sequence="6"/>
+		<menuitem name="More chart types" id="menu_hc_more_charts_root" parent="menu_hc_root" sequence="7"/>
+		<menuitem name="Gauges" id="menu_hc_gauges_root" parent="menu_hc_root" sequence="8"/>
+		<menuitem name="Heap maps" id="menu_hc_heap_maps_root" parent="menu_hc_root" sequence="9"/>
+		<menuitem id="menus_dash_root" name="Dashboard" sequence="1"/>
+		
+		
+		<record id="demo_graph_hc_search" model="ir.ui.view">
+			<field name="name">demo.graph.hc.search</field>
+			<field name="model">demo.graph.hc</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search options='{"searchable": false, "clearable": false, "filterable": false}'></search>
+			</field>
+		</record>
+	</data>
+</openerp>

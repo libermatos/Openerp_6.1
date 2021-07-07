@@ -1,0 +1,41 @@
+***************************************************************
+           Web_graph_highcharts
+***************************************************************
+
+Módulo para OpenERP 6.1 que permite generar gráficas Highcharts
+
+
+Características
+---------------
+- Tiene incluido el framework Highcharts JS 4.0.1.
+- En el archivo __openerp.py__ se pueden habilitar archivos necesarios o en caso contrario deshabilitar
+  los que no sean necesarios.
+- Es posible utilizar diferentes temas para las gráficas generadas. Para habilitar esta característica
+  hay que habilitar el tema deseado en el archivo __openerp__.py.
+- Para la representación del botón que muestra la vista de tipo graph_highcharts se tiene habilitado un 
+  estilo por defecto, en este caso azul. No obstante en el módulo se encuentra el estilo perteneciente al
+  OpenERP original que sería rojo. Esto es configurable a través del archivo __openerp__.py
+- Contiene la traducción al idioma inglés y al español.
+
+
+Instalación
+-----------
+No es necesario la instalación de ninguna dependencia
+
+
+Documentación
+-------------
+- En doc\Manual-web_graph_highcharts.pdf se encuentra un manual útil para los desarrolladores.
+ 
+
+Ideas, preguntas, sugerencias y reporte de bugs
+-----------------------------------------------
+Contacte o envíe correo a:
+- Liber Matos Martín <lfmatos@gmail.com>
+
+
+Autores
+--------
+Liber Matos Martín <lfmatos@gmail.com>
+
+

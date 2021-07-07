@@ -1,0 +1,217 @@
+msgid ""
+msgstr ""
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:15
+msgid "Graph"
+msgstr "Gráfico"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:17
+msgid "Loading..."
+msgstr "Leyendo..."
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "January"
+msgstr "Enero"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "February"
+msgstr "Febrero"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "March"
+msgstr "Marzo"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "April"
+msgstr "Abril"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "May"
+msgstr "Mayo"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "June"
+msgstr "Junio"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "July"
+msgstr "Julio"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "August"
+msgstr "Agosto"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "September"
+msgstr "Septiembre"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "October"
+msgstr "Octubre"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "November"
+msgstr "Noviembre"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:18
+msgid "December"
+msgstr "Diciembre"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Jan"
+msgstr "Ene"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Feb"
+msgstr "Feb"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Mar"
+msgstr "Mar"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Apr"
+msgstr "Abr"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "May "
+msgstr "May"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Jun"
+msgstr "Jun"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Jul"
+msgstr "Jul"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Aug"
+msgstr "Ago"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Sep"
+msgstr "Sep"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Oct"
+msgstr "Oct"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Nov"
+msgstr "Nov"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:19
+msgid "Dec"
+msgstr "Dic"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:20
+msgid "Sunday"
+msgstr "Domingo"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:20
+msgid "Monday"
+msgstr "Lunes"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:20
+msgid "Tuesday"
+msgstr "Martes"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:20
+msgid "Wednesday"
+msgstr "Miércoles"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:20
+msgid "Thursday"
+msgstr "Jueves"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:20
+msgid "Friday"
+msgstr "Viernes"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:20
+msgid "Saturday"
+msgstr "Sábado"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:23
+msgid "Reset zoom"
+msgstr "Ver normal"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:24
+msgid "Reset zoom level 1:1"
+msgstr "Ver al nivel 1:1"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:26
+msgid "◁ Back to {series.name}"
+msgstr "◁ Regresar a {series.name}"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:27
+msgid "No data to display"
+msgstr "No hay datos para mostrar"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:28
+msgid "Print chart"
+msgstr "Imprimir gráfica"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:29
+msgid "Download PNG image"
+msgstr "Descargar imagen PNG"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:30
+msgid "Download JPEG image"
+msgstr "Descargar imagen JPEG"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:31
+msgid "Download PDF document"
+msgstr "Descargar documento PDF"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:32
+msgid "Download SVG vector image"
+msgstr "Descargar imagen vectorial SVG"
+
+#. openerp-web
+#: addons/web_graph_highcharts/static/src/js/graph_highcharts.js:33
+msgid "Chart context menu"
+msgstr "Menú contextual para gráfico"
