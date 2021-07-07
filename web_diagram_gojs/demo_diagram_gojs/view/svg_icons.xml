@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_svg_icons_gojs">
+			<field name="name">demo.svg.icons.gojs</field>
+			<field name="model">demo.diagram.gojs</field>
+			<field name="type">diagram_gojs</field>
+			<field name="arch" type="xml">
+				<diagram_gojs js_handler="demo_svg_icons" method="svg_icons"/>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_svg_icons_gojs">
+			<field name="res_model">demo.diagram.gojs</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">diagram_gojs</field>
+			<field name="search_view_id" ref="demo_diagram_gojs.demo_gojs_search"/>
+			<field name="view_id" ref="demo_diagram_gojs.view_svg_icons_gojs"/>
+		</record>
+
+		<menuitem action="action_svg_icons_gojs" name="SVG Icons" id="menu_svg_icons_gojs" parent="menu_gojs_samples" sequence="5"/>
+	</data>
+</openerp>

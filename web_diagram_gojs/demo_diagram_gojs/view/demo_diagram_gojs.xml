@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<menuitem name="GoJs Samples" id="menu_gojs_root"/>
+		<menuitem name="Samples" id="menu_gojs_samples" parent="menu_gojs_root" sequence="1"/>
+
+		<menuitem id="menus_dash_root" name="Dashboard" sequence="1"/>
+
+
+		<record id="demo_gojs_search" model="ir.ui.view">
+			<field name="name">demo.diagram.gojs.search</field>
+			<field name="model">demo.diagram.gojs</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search options='{"searchable": false, "clearable": false, "filterable": false}'></search>
+			</field>
+		</record>
+	</data>
+</openerp>

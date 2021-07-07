@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_arrowheads_gojs">
+			<field name="name">demo.arrowheads.gojs</field>
+			<field name="model">demo.diagram.gojs</field>
+			<field name="type">diagram_gojs</field>
+			<field name="arch" type="xml">
+				<diagram_gojs js_handler="demo_arrowheads" method="arrowheads"/>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_arrowheads_gojs">
+			<field name="res_model">demo.diagram.gojs</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">diagram_gojs</field>
+			<field name="search_view_id" ref="demo_diagram_gojs.demo_gojs_search"/>
+			<field name="view_id" ref="demo_diagram_gojs.view_arrowheads_gojs"/>
+		</record>
+
+		<menuitem action="action_arrowheads_gojs" name="Arrowheads" id="menu_arrowheads_gojs" parent="menu_gojs_samples" sequence="4"/>
+	</data>
+</openerp>

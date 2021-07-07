@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_navigation_gojs">
+			<field name="name">demo.navigation.gojs</field>
+			<field name="model">demo.diagram.gojs</field>
+			<field name="type">diagram_gojs</field>
+			<field name="arch" type="xml">
+				<diagram_gojs js_handler="demo_navigation" method="navigation"/>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_navigation_gojs">
+			<field name="res_model">demo.diagram.gojs</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">diagram_gojs</field>
+			<field name="search_view_id" ref="demo_diagram_gojs.demo_gojs_search"/>
+			<field name="view_id" ref="demo_diagram_gojs.view_navigation_gojs"/>
+		</record>
+
+		<menuitem action="action_navigation_gojs" name="Navigation" id="menu_navigation_gojs" parent="menu_gojs_samples" sequence="6"/>
+	</data>
+</openerp>

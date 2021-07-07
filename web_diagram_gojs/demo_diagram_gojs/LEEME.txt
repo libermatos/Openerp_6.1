@@ -1,0 +1,37 @@
+***************************************************************
+            demo_graph_highcharts
+***************************************************************
+
+Módulo para OpenERP 6.1 que permite mostrar el funcionamiento, a través de ejemplos, del módulo
+web_graph_highcharts.
+
+
+Características
+---------------
+- Se utilizan datos estáticos con el fin solo de mostrar el funcionamiento. En la práctica es
+  posible el uso de estos datos pero siendo concatenados con datos provenientes de Python.
+- Existen ejemplos que tienen habilitados la opción de exportar las gráficas generadas a formato
+  .png o .pdf. Esta opción no se mostrará hasta que no se instale el módulo web_graph_highcharts_export.
+  Este módulo no ha sido incluído entre las dependencias porque el mismo necesitas dependencias de Python.  
+
+
+Instalación
+-----------
+No es necesario la instalación de ninguna dependencia
+
+
+Ideas, preguntas, sugerencias y reporte de bugs
+-----------------------------------------------
+Contacte o envíe correo a:
+- Liber Matos Martín <liber@hlg.desoft.cu>
+- Ismel Rabaza Andino <irabaza@hlg.desoft.cu>
+Teléfono: (024) 468888  Ext: 120
+Desoft División Holguín.
+
+
+Autores
+--------
+Liber Matos Martín <liber@hlg.desoft.cu>
+Ismel Rabaza Andino <irabaza@hlg.desoft.cu>
+
+

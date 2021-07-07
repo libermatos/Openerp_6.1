@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="board_gojs_form" model="ir.ui.view">
+			<field name="name">board.gojs.form</field>
+			<field name="model">board.board</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="GoJS Board">
+					<board style="1-1" changeable="false" resetable="true">
+						<column>
+							<action name="%(action_svg_icons_gojs)d" string="SVG Icons" dragable="false" closable="false" expandable="false"/>
+							<action name="%(action_entityrelationship_gojs)d" string="SVG Icons" dragable="false" closable="false" expandable="false"/>
+						</column>
+						<column>
+							<action name="%(action_taperedlinks_gojs)d" string="Tapered Links" dragable="false" closable="false" expandable="false"/>
+							<action name="%(action_cLayout_gojs)d" string="Circular Layout" dragable="false" closable="false" expandable="false"/>
+						</column>
+					</board>
+				</form>
+			</field>
+		</record>
+
+		<record id="action_board_gojs" model="ir.actions.act_window">
+			<field name="name">GoJS Dashboard</field>
+			<field name="res_model">board.board</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="board_gojs_form"/>
+		</record>
+
+		<menuitem id="menu_diagram_gojs" name="Diagrams" parent="menus_dash_root" sequence="1"/>
+
+		<menuitem id="menu_gojs" name="Samples" parent="menu_diagram_gojs" action="action_board_gojs" sequence="1"/>
+		<menuitem name="Diagrams" id="menu_gojs_root" action="action_board_gojs"/>
+	</data>
+</openerp>
