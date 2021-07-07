@@ -1,0 +1,7 @@
+msgid ""
+msgstr ""
+
+#. openerp-web
+#: addons/web_diagram_gojs/static/src/js/diagram_gojs.js:15
+msgid "Diagram"
+msgstr "Diagrama"

@@ -1,0 +1,20 @@
+.openerp .oe_vm_switch_diagram_gojs{
+    background: url("/web_diagram_gojs/static/src/img/views-icons-a-blue.png") repeat-x scroll left top transparent;
+    overflow: hidden;
+    width: 22px;
+    height: 21px;
+    border: none;
+    background-position: 0px 0px;
+}
+.openerp .oe_vm_switch_diagram_gojs span{
+    display: none;
+}
+.openerp .oe_vm_switch_diagram_gojs {
+    background-position: 0px 0px;
+}
+.openerp .oe_vm_switch_diagram_gojs:active,
+.openerp .oe_vm_switch_diagram_gojs:hover,
+.openerp .oe_vm_switch_diagram_gojs:focus,
+.openerp .oe_vm_switch_diagram_gojs[disabled="disabled"] {
+    background-position: 0px -21px;
+}
