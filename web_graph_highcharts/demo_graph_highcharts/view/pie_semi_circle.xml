@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_pie_semi_circle_hc_graph">
+			<field name="name">demo.pie_semi_circle.graph</field>
+			<field name="model">demo.graph.hc</field>
+			<field name="type">graph_highcharts</field>
+			<field name="arch" type="xml">
+				<graph_highcharts string="Pie Semi Circle" method="pie_semi_circle"/>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_pie_semi_circle_hc">
+			<field name="res_model">demo.graph.hc</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">graph_highcharts</field>
+			<field name="search_view_id" ref="demo_graph_highcharts.demo_graph_hc_search"/>
+			<field name="view_id" ref="demo_graph_highcharts.view_pie_semi_circle_hc_graph"/>
+		</record>
+
+		<menuitem action="action_pie_semi_circle_hc" name="Pie Semi Circle" id="menu_pie_semi_circle_hc" parent="menu_hc_pie_charts_root" sequence="2"/>
+	</data>
+</openerp>

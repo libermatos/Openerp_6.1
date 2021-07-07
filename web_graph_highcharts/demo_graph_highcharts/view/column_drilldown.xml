@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_column_drilldown_hc_graph">
+			<field name="name">demo.column.drilldown.graph</field>
+			<field name="model">demo.graph.hc</field>
+			<field name="type">graph_highcharts</field>
+			<field name="arch" type="xml">
+				<graph_highcharts string="Column Drilldown" method="column_drilldown"/>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_column_drilldown_hc">
+			<field name="res_model">demo.graph.hc</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">graph_highcharts</field>
+			<field name="search_view_id" ref="demo_graph_highcharts.demo_graph_hc_search"/>
+			<field name="view_id" ref="demo_graph_highcharts.view_column_drilldown_hc_graph"/>
+		</record>
+
+		<menuitem action="action_column_drilldown_hc" name="Column Drilldown" id="menu_column_drilldown_hc" parent="menu_hc_column_bar_charts_root" sequence="1"/>
+	</data>
+</openerp>

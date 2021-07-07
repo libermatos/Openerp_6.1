@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_3d_column_stacking_grouping_hc_graph">
+			<field name="name">demo.3d.column.stacking.grouping.graph</field>
+			<field name="model">demo.graph.hc</field>
+			<field name="type">graph_highcharts</field>
+			<field name="arch" type="xml">
+				<graph_highcharts string="3d column with stacking and grouping" method="hc_3d_column_stacking_grouping"/>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_3d_column_stacking_grouping_hc">
+			<field name="res_model">demo.graph.hc</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">graph_highcharts</field>
+			<field name="search_view_id" ref="demo_graph_highcharts.demo_graph_hc_search"/>
+			<field name="view_id" ref="demo_graph_highcharts.view_3d_column_stacking_grouping_hc_graph"/>
+		</record>
+
+		<menuitem action="action_3d_column_stacking_grouping_hc" name="3D column with stacking and grouping" id="menu_3D_column_stacking_grouping_hc" parent="menu_hc_3d_charts_root" sequence="2"/>
+	</data>
+</openerp>

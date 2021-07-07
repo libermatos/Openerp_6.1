@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+
+#. openerp-web
+#: addons/web_graph_highcharts_export/static/src/js/exporting.openerp.js:38
+msgid "Download PNG image"
+msgstr "Descargar imagen PNG"
+
+#. openerp-web
+#: addons/web_graph_highcharts_export/static/src/js/exporting.openerp.js:39
+msgid "Download PDF document"
+msgstr "Descargar documento PDF"
+
+#. openerp-web
+#: addons/web_graph_highcharts_export/static/src/js/exporting.openerp.js:40
+msgid "Download SVG vector image"
+msgstr "Descargar imagen vectorial SVG"
+
+#. openerp-web
+#: addons/web_graph_highcharts_export/static/src/js/exporting.openerp.js:41
+msgid "Chart context menu"
+msgstr "Menú contextual para gráfico"
