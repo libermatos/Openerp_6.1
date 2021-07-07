@@ -1,0 +1,26 @@
+<openerp>
+	<data>
+		<record id="act_report_xml_view" model="ir.ui.view">
+			<field name="name">ir.actions.report.xml.inherit</field>
+			<field name="model">ir.actions.report.xml</field>
+			<field name="inherit_id" ref="base.act_report_xml_view"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<xpath expr="/form/notebook/page[@string='Security']" position="before" >
+					<page string="Mako2Pdf" attrs="{'invisible':[('report_type','!=','mako2pdf')]}">
+						<field name="m2pdf_path"/>
+						<field name="m2pdf_encoding"/>
+						<group colspan="4" cols="6">
+							<field name="m2pdf_show_error_as_pdf"/>
+							<field name="m2pdf_xhtml"/>
+						</group>
+						<separator string="Mako2Pdf Template (used if Report File is not found)" colspan="4"/>
+						<field name="m2pdf_data" colspan="4" nolabel="1"/>
+						<separator string="Default CSS" colspan="4"/>
+						<field name="m2pdf_default_css" colspan="4" nolabel="1"/>
+					</page>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</openerp>

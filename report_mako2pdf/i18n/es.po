@@ -1,0 +1,86 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-16 13:40+0000\n"
+"PO-Revision-Date: 2014-06-16 13:40+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: report_mako2pdf
+#: code:addons/report_mako2pdf/mako2pdf.py:130
+#: code:addons/report_mako2pdf/mako2pdf.py:140
+#, python-format
+msgid "XHtml2Pdf render"
+msgstr "Renderizador del XHtml2Pdf"
+
+#. module: report_mako2pdf
+#: code:addons/report_mako2pdf/mako2pdf.py:117
+#, python-format
+msgid "Report template not found!"
+msgstr "¡Plantilla del informe no encontrada!"
+
+#. module: report_mako2pdf
+#: field:ir.actions.report.xml,m2pdf_path:0
+msgid "Files path"
+msgstr "Ruta Archivos"
+
+#. module: report_mako2pdf
+#: help:ir.actions.report.xml,m2pdf_encoding:0
+msgid "The encoding name of the source."
+msgstr "Codificación del código fuente."
+
+#. module: report_mako2pdf
+#: view:ir.actions.report.xml:0
+#: field:ir.actions.report.xml,m2pdf_default_css:0
+msgid "Default CSS"
+msgstr "CSS por defecto"
+
+#. module: report_mako2pdf
+#: view:ir.actions.report.xml:0
+msgid "Mako2Pdf Template (used if Report File is not found)"
+msgstr "Plantilla para Mako2Pdf (se usa si no se encuentra el archivo del report)"
+
+#. module: report_mako2pdf
+#: field:ir.actions.report.xml,m2pdf_data:0
+msgid "Mako2PDF Template"
+msgstr "Pantilla Mako2PDF"
+
+#. module: report_mako2pdf
+#: help:ir.actions.report.xml,m2pdf_show_error_as_pdf:0
+msgid "Boolean that indicates that the errors will be dumped into a PDF."
+msgstr "Booleano que indica que los errores serán añadadidos dentro del PDF."
+
+#. module: report_mako2pdf
+#: field:ir.actions.report.xml,m2pdf_encoding:0
+msgid "Encoding"
+msgstr "Codificación"
+
+#. module: report_mako2pdf
+#: help:ir.actions.report.xml,m2pdf_xhtml:0
+msgid "Boolean to force parsing the source as XHTML."
+msgstr "Booleano para forzar el chequeo del código como un XHTML."
+
+#. module: report_mako2pdf
+#: help:ir.actions.report.xml,m2pdf_default_css:0
+msgid "Here you can pass a default CSS definition in as a String."
+msgstr "Aquí es posible pasar un CSS por defecto como una cadena."
+
+#. module: report_mako2pdf
+#: field:ir.actions.report.xml,m2pdf_show_error_as_pdf:0
+msgid "Show error"
+msgstr "Mostrar error"
+
+#. module: report_mako2pdf
+#: help:ir.actions.report.xml,m2pdf_path:0
+msgid "The original file path or URL. This is needed to calculate relative paths of images and style sheets."
+msgstr "Ruta original del archivo o URL. Es necesario para determinar las rutas relativas a las imágenes y estilos."
